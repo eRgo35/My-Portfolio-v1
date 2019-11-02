@@ -1,0 +1,92 @@
+@keyframes pageSwitch {
+    0%   { width: 0; }
+    100% { width: 100%; }
+}
+nav#menu {
+    text-align: center;
+    margin: 30px 0 0;
+}
+.menuContactTab *{
+    color: #bbbbbb;
+}
+
+.menuContactTab *::before {
+    background: #bbbbbb;
+}
+
+.menuContactTab *::after {
+    background: #bbbbbb;
+}
+
+.menuHobbiesTab *{
+    color: #000000;
+}
+
+.menuHobbiesTab *::before {
+    background: #000000;
+}
+
+.menuHobbiesTab *::after {
+    background: #000000;
+}
+
+.menuProjectsTab *{
+    color: #dddddd;
+}
+
+.menuProjectsTab *::before {
+    background: #dddddd;
+}
+
+.menuProjectsTab *::after {
+    background: #dddddd;
+}
+
+.menuItems {
+    color: #585858;
+    text-decoration: none;
+    margin: 0 20px 0;
+    position: relative;
+}
+
+.menuItems::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #585858;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menuItems:hover::before {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background: #585858;
+    animation: pageSwitch 0.3s linear 1 forwards;
+}
+
+main {
+    text-align: center;
+    position: relative;
+}
+
+router-outlet {
+    text-align: center;
+}

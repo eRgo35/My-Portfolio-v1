@@ -1,0 +1,105 @@
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Play Fair Display';
+    margin: 200px auto 25px;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Play Fair Display';
+    margin: 5px auto 5px;
+}
+
+h3 {
+    color: white;
+    font-size: 26px;
+    font-family: 'Play Fair Display';
+    margin: 60px auto 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 60px;
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #fff;
+    color: #fff;
+    text-align: center;
+}
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    color: white;
+    background: #171717;
+}
+
+.img {
+    background: url('../../assets/Background.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+a#nav-a {
+    color: #bbbbbb;
+    text-decoration: underline;
+    margin: 0 20px 0;
+    position: relative;
+}
+
+a#nav-a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background: #bbbbbb;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+a#nav-a:hover::before {
+    visibility: visible;
+    transform: translateY(2px);
+}
+
+nav {
+    margin: 30px auto 80px;
+}
+
+footer {
+    width: 100vw;
+    height: 110px;
+    color: white;
+    font-family: 'Lato';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 50px;
+        margin: 70px auto 25px;
+    }
+
+    a#nav-a {
+        margin: 10px 0;
+        display: block;
+    }
+}

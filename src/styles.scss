@@ -1,0 +1,97 @@
+html {
+    background: #dfdfdf;
+    margin: 0;
+    font-family: "Lato";
+    transition: background .5s ease-in-out; 
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-selection {
+    background: rgb(177, 177, 177);
+    color: white;
+}
+
+::selection {
+    background: rgb(177, 177, 177);
+    color: white;
+}
+
+#home {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 6px solid #353535;
+    margin: 0 auto;
+    transform: translateY(-16px);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#home:hover {
+    border: 6px solid #696969;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.homeContactTab {
+    border: 6px solid #dddddd !important;
+}
+
+.homeContactTab:hover {
+    border: 6px solid #555555 !important;
+}
+
+
+#frame { 
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+#scrollToTop {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 4vw;
+    right: 4vw;
+    transition: background .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#scrollToTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #c7c7c7;
+    transition: color .5s ease-in-out;
+    text-shadow: 0px 0px 30px rgba(151, 151, 151, 0.349);
+}
+
+#scrollToTop:hover::after {
+    cursor: pointer;
+    color: #a5a5a5;
+    transition: color .5s ease-in-out;
+}
+
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+}

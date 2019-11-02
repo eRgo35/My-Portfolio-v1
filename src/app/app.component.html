@@ -1,0 +1,12 @@
+<div id="wrapper">
+  <nav id="menu">
+    <a class="menuItems" *ngFor="let item of menu" [routerLink]="[item.route]" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <i> {{ item.icon }} </i>
+      {{item.title}}
+    </a>
+  </nav>
+  <main [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </main>
+</div>

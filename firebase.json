@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "michal-czyz-portfolio-v1",
     "public": "dist/MCML",
     "ignore": [
       "firebase.json",

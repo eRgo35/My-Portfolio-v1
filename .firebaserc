@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "michal-czyz-portfolio"
+  },
+  "targets": {
+    "michal-czyz-portfolio": {
+      "hosting": {
+        "michal-czyz-portfolio-v1": [
+          "michal-czyz-portfolio-v1"
+        ]
+      }
+    }
   }
 }

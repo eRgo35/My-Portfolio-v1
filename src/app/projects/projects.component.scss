@@ -1,49 +1,49 @@
 table, tr, th, td {
-    border-collapse: collapse;
-    background: #C0C0C0;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16pt;
+  border-collapse: collapse;
+  background: #C0C0C0;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16pt;
 }
 table {
-    margin-top: 15px;
-    width: 50vw;
-    border: 3px ridge #aaaaaa;
-    table-layout: fixed;
+  margin-top: 15px;
+  width: 50vw;
+  border: 3px ridge #aaaaaa;
+  table-layout: fixed;
 }
 th, td {
-    border-left: 3px groove #aaaaaa;
-    border-right: 3px groove #aaaaaa;
+  border-left: 3px groove #aaaaaa;
+  border-right: 3px groove #aaaaaa;
 }
 th:first-child, td:first-child, th:last-child, td:last-child {
-    border: none;
+  border: none;
 }
 tr {
-    border: none;
+  border: none;
 }
 #wrapper {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #download {
-    width: 120px;
+  width: 120px;
 }
 #version {
-    width: 120px;
+  width: 120px;
 }
 a {
-    color: blue;
+  color: blue;
 }
 @media only screen and (max-width: 1000px) {
-    table {
-        width: 90vw;
-    }
-    table, tr, th, td {
-        font-size: 12pt;
-    }
-    #download, #version {
-        width: 100px;
-    }
+  table {
+      width: 90vw;
+  }
+  table, tr, th, td {
+      font-size: 12pt;
+  }
+  #download, #version {
+      width: 100px;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { SliderAnimation } from '../animations/SliderAnimation';
 
 interface ROUTE {
@@ -12,10 +12,10 @@ interface ROUTE {
   styleUrls: ['./hobbies.component.scss'],
   animations: [SliderAnimation]
 })
-export class HobbiesComponent implements OnInit {
+export class HobbiesComponent {
 
   constructor(private renderer: Renderer2) {
-    this.renderer.setStyle(document.getElementById("root"), 'background', '#fdd835');
+    this.renderer.setStyle(document.getElementById("root"), 'background', '#F49F0A');
     this.renderer.removeClass(document.getElementById("menu"), 'menuAboutTab');
     this.renderer.removeClass(document.getElementById("home"), 'homeAboutTab');
     this.renderer.addClass(document.getElementById("menu"), 'menuHobbiesTab');
@@ -26,7 +26,22 @@ export class HobbiesComponent implements OnInit {
     this.renderer.removeClass(document.getElementById("home"), 'homeContactTab');
   }
 
-  ngOnInit() {
-  }
-
+  items = [
+    {
+      type: 'Google Earth Studio',
+      href: 'https://www.youtube.com/playlist?list=PLgm7_rin1dVzcviyHPVFLvvuzX2dogIPV'
+    },
+    {
+      type: 'Portal Speedruns',
+      href: 'https://www.youtube.com/playlist?list=PLgm7_rin1dVwmGrP2i2eXddbrT1H4lwAo'
+    },
+    {
+      type: 'Card Magic',
+      href: 'https://www.youtube.com/channel/UCiEQ8ZDBKqxdOTt1DVnoyQQ'
+    },
+    {
+      type: 'Speedcubing',
+      href: 'https://www.youtube.com/channel/UCiEQ8ZDBKqxdOTt1DVnoyQQ'
+    }
+  ]
 }

@@ -1,10 +1,24 @@
 <div id="wrapper">
-    <ul style="list-style-type: none;">
-        <li>Speedcubing</li>
-        <li>Magician</li>
-        <li>Gamer</li>
-        <li>YouTuber</li>
-        <li>Ethical Hacker</li>
-        <li>Coder</li>
-    </ul>
+  <table>
+      <tr>
+          <th>Hobby</th>
+          <th id="download">Link</th>
+      </tr>
+      <tr>
+          <td>{{ items[0].type }}</td>
+          <td><a target="_BLANK" href="{{ items[0].href }}">[LINK]</a></td>
+      </tr>
+      <tr>
+          <td>{{ items[1].type }}</td>
+          <td><a target="_BLANK" href="{{ items[1].href }}">[LINK]</a></td>
+      </tr>
+      <tr>
+          <td>{{ items[2].type }}</td>
+          <td><a target="_BLANK" href="{{ items[2].href }}">[LINK]</a></td>
+      </tr>
+      <tr>
+          <td>{{ items[3].type }}</td>
+          <td><a target="_BLANK" href="{{ items[3].href }}">[LINK]</a></td>
+      </tr>
+  </table>
 </div>
